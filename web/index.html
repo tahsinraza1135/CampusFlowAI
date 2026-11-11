@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusFlow AI</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="brand-mark">C</div><div><p class="eyebrow">CAMPUS OPERATIONS</p><h1>CampusFlow <span>AI</span></h1></div><div class="online"><i></i> Prototype</div></header>
+    <section class="intro"><p class="eyebrow">YOUR CAMPUS ASSISTANT</p><h2>What can I help you<br>get done today?</h2><p>Ask for a campus service. I’ll plan the steps, use the right service, and report what happened.</p></section>
+    <section class="shortcuts" aria-label="Quick prompts"><button data-prompt="Check my attendance">Check attendance <b>↗</b></button><button data-prompt="Find an available lab tomorrow afternoon">Find a lab <b>↗</b></button><button data-prompt="Help me prepare a leave application because I am sick">Prepare leave <b>↗</b></button></section>
+    <section class="conversation" id="conversation" aria-live="polite"><div class="message assistant"><div class="avatar">C</div><div class="bubble">Hi! I can help with lab availability and bookings, attendance checks, and leave applications. What would you like to do?</div></div></section>
+    <form id="request-form"><label for="student">Student ID</label><input id="student" value="S1001" required><label for="message">Your request</label><textarea id="message" placeholder="For example: Check my attendance and find a lab tomorrow afternoon" required></textarea><div class="form-bottom"><small>Leave applications and bookings require your confirmation.</small><button class="send" type="submit">Send request <span>↑</span></button></div></form>
+    <footer>CampusFlow AI <span>·</span> Simulated campus services for demonstration</footer>
+  </main><script src="/app.js"></script>
+</body></html>
